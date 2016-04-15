@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D672E9D7-7845-45DD-ABBB-517F669D9E29}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Bengkel_Basic.My.MyApplication</StartupObject>
+    <RootNamespace>Bengkel_Basic</RootNamespace>
+    <AssemblyName>Bengkel_Basic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Bengkel_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Bengkel_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Index\Frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index\Frm_Login.Designer.vb">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index\Frm_Utama.Designer.vb">
+      <DependentUpon>Frm_Utama.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Index\Frm_Utama.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\Frm_Barang.Designer.vb">
+      <DependentUpon>Frm_Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\Frm_Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\Frm_Kendaraan.Designer.vb">
+      <DependentUpon>Frm_Kendaraan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\Frm_Kendaraan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\Frm_Mekanik.Designer.vb">
+      <DependentUpon>Frm_Mekanik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\Frm_Mekanik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\Frm_Pelanggan.Designer.vb">
+      <DependentUpon>Frm_Pelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\Frm_Pelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\Frm_Suplier.Designer.vb">
+      <DependentUpon>Frm_Suplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\Frm_Suplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Data\Frm_User.Designer.vb">
+      <DependentUpon>Frm_User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Data\Frm_User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Barang.Designer.vb">
+      <DependentUpon>Ins_Barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Kendaraan.Designer.vb">
+      <DependentUpon>Ins_Kendaraan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Kendaraan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Mekanik.Designer.vb">
+      <DependentUpon>Ins_Mekanik.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Mekanik.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Pelanggan.Designer.vb">
+      <DependentUpon>Ins_Pelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Pelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Suplier.Designer.vb">
+      <DependentUpon>Ins_Suplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master Input + Update\Ins_Suplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Index\Frm_Login.resx">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index\Frm_Utama.resx">
+      <DependentUpon>Frm_Utama.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\Frm_Barang.resx">
+      <DependentUpon>Frm_Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\Frm_Kendaraan.resx">
+      <DependentUpon>Frm_Kendaraan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\Frm_Mekanik.resx">
+      <DependentUpon>Frm_Mekanik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\Frm_Pelanggan.resx">
+      <DependentUpon>Frm_Pelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Data\Frm_Suplier.resx">
+      <DependentUpon>Frm_Suplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Input + Update\Ins_Barang.resx">
+      <DependentUpon>Ins_Barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Input + Update\Ins_Kendaraan.resx">
+      <DependentUpon>Ins_Kendaraan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Input + Update\Ins_Mekanik.resx">
+      <DependentUpon>Ins_Mekanik.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Input + Update\Ins_Pelanggan.resx">
+      <DependentUpon>Ins_Pelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Input + Update\Ins_Suplier.resx">
+      <DependentUpon>Ins_Suplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
